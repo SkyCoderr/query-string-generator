@@ -13,7 +13,7 @@
     </div>
 
     <div class="button">
-      <button @click="saveColorOption">save</button>
+      <button @click="saveLaserOption">save</button>
     </div>
   </div>
 </template>
@@ -36,7 +36,7 @@ export default class LaserOption extends Vue {
 
   selectedRange = "with";
 
-  saveColorOption() {
+  saveLaserOption() {
     this.updateLaser({ laserRange: this.selectedRange });
   }
 }
