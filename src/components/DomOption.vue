@@ -17,7 +17,7 @@
     </div>
 
     <div class="button">
-      <button @click="saveColorOption">save</button>
+      <button @click="saveDomOption">save</button>
     </div>
   </div>
 </template>
@@ -42,7 +42,7 @@ export default class DomOption extends Vue {
   selectedRange = "on";
   date = "1980-01-01";
 
-  saveColorOption() {
+  saveDomOption() {
     const date = new Date(this.date);
     const earliest = new Date("1980-01-01");
     const latest = new Date("2020-12-31");

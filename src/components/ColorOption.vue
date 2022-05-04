@@ -58,7 +58,7 @@ export default class ColorOption extends Vue {
       alert("Please select at least 1 color.");
       return;
     }
-    this.updateColors({ coverage: this.coverage, colors: this.colors });
+    this.updateColors({ coverage: this.coverage, colors: { ...this.colors } });
   }
 }
 </script>

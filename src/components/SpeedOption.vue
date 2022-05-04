@@ -17,7 +17,7 @@
     </div>
 
     <div class="button">
-      <button @click="saveColorOption">save</button>
+      <button @click="saveSpeedOption">save</button>
     </div>
   </div>
 </template>
@@ -42,7 +42,7 @@ export default class SpeedOption extends Vue {
   selectedRange = "lt";
   text = "";
 
-  saveColorOption() {
+  saveSpeedOption() {
     const number = Number(this.text);
     if (isNaN(number) || number < 50 || number > 200) {
       alert(
