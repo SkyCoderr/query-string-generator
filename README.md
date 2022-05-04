@@ -1,24 +1,23 @@
 # query-string-generator
 
-## Project setup
+## Install Dependencies
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Build And Serve The App
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+### Start App
+- Open up browser
+- Go to http://localhost:8080/
 
-### Lints and fixes files
-```
-yarn lint
-```
+### Play with The App
+- There are four tabs in the app for user inputs
+- Query strings are generated on top of the page
+- To begin with, default options will be loaded
+- In each tab, after clicking on the `save` button, the setting for the current tab would be synced to global store and trigger update on the generated query string
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
